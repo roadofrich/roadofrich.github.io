@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'token.scss';
+@import 'team.scss';
+@import 'contact.scss';
+@import 'partner.scss';
+@import 'whitepaper.scss';
+@import 'roadmap.scss';
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: $primary;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($primary, 20%);
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+h2, h3, h4 {
+  font-weight:bold;
+}
+h2 {
+  font-size:3.2rem;
+}

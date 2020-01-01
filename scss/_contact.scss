@@ -1,0 +1,54 @@
+.contact-section {
+  padding: 5rem 0;
+  .contactInnerWrapper{
+    margin:0 0 15px 0;
+    text-align:center;
+    .copyright{
+      display:block;
+      margin:0 10px 10px 0;
+      p{
+        margin: 2px 0;
+        color:#fff;      
+      }
+      p.gold{
+        color:$primary;
+      }
+    }
+    .socialIcon{
+      color:#ddd;
+      outline:0;
+      display:inline-block;
+      height:2.6rem;
+      width:auto;
+      margin-right:5px;
+      img{
+        height:100%;
+        display:block;
+      }
+    }
+  }
+  .footerLogo{
+    height:120px;
+    margin: 0 auto;
+    display: block;
+  }
+  @media (min-width: 768px) {
+    .contactInnerWrapper{
+      text-align:left;
+    }
+  }
+  @media(min-width: 992px) {
+    .contactInnerWrapper{
+      margin:32px 0;
+      text-align:left;
+      .copyright{
+        display:inline-block;
+        margin:0 15px 0 0;
+      }
+    }
+    .footerLogo{
+      margin:0;
+
+    }
+  }
+}

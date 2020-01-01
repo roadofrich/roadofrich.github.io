@@ -1,0 +1,45 @@
+.about-section {
+  padding: 5rem 0 5rem 0;
+  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+	.ror-carousel{
+	  color:#fff;
+	}
+	.carouselItem{
+	  position:relative;
+	}
+	.carouselItem h3{
+	  position:absolute;bottom:30px;
+	  left:50%;
+	  transform:translateX(-50%);
+	}
+
+	.carouselNavWrap{
+		width:100%;
+		background:black;
+		.carouselNav {
+			margin:0 auto;
+			.carouselNavItem{
+				display:inline-block;
+			}
+			.carouselNavItem a{
+				padding:0.5rem;
+				display:block;
+				outline:0;
+				font-size:0.9rem;
+			}
+			.carouselNavItem a.active{
+				color:#fff;
+			}
+		}
+	}
+	@media(min-width: 992px) {
+		.carouselNavWrap{
+			.carouselNav {
+				.carouselNavItem a{
+					font-size:1rem;
+					padding:1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.partner-section {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background: url(/img/partner_bg.jpg);
+  p {
+    margin-bottom: 5rem;
+  }
+  .partnerItem{
+  	height:230px;
+  	padding:20px;
+  	white-space: nowrap;
+  	text-align: center;
+
+  	.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+  	img{
+  		display:inline-block;
+			vertical-align: middle;
+			max-height: 200px;
+			max-width: 100%;
+  	}
+  }
+}

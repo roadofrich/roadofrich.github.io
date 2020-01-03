@@ -12,6 +12,15 @@
 	  left:50%;
 	  transform:translateX(-50%);
 	}
+	.carouselItem .more{
+		position: absolute;
+		top:70%;
+		left:8%;
+		padding:0.4rem 1rem;
+		color:#fff;
+		border:1px solid #fff;
+		display: inline-block;
+	}
 
 	.carouselNavWrap{
 		width:100%;
@@ -32,7 +41,26 @@
 			}
 		}
 	}
+	@media(min-width: 576px) {
+		.carouselItem .more{
+			top:209px;
+			left:43px;
+			padding:0.4rem 1rem;
+		}
+	}
+	@media(min-width: 768px) {
+		.carouselItem .more{
+			top:285px;
+			left:58px;
+			padding:0.7rem 2rem;
+		}
+	}
 	@media(min-width: 992px) {
+		.carouselItem .more{
+			top:382px;
+			left:77px;
+			padding:0.7rem 2rem;
+		}
 		.carouselNavWrap{
 			.carouselNav {
 				.carouselNavItem a{
@@ -40,6 +68,13 @@
 					padding:1rem;
 				}
 			}
+		}
+	}
+	@media(min-width: 1200px) {
+		.carouselItem .more{
+			top:450px;
+			left:90px;
+			padding:0.7rem 2rem;
 		}
 	}
 }

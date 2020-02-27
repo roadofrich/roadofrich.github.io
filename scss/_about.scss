@@ -4,27 +4,141 @@
 	.ror-carousel{
 	  color:#fff;
 	}
+	.carouselContainer{
+		background:#000;
+	}
 	.carouselItem{
 	  position:relative;
 	}
-	.carouselItem h3{
-	  position:absolute;bottom:30px;
-	  left:50%;
-	  transform:translateX(-50%);
+	.carouselItemRorUniverse {
+		.textPanel{
+			position:absolute;
+			top:19%;
+			left:0px;
+			h3{
+				text-align:left;
+				margin-left:8px;
+				font-family: arial;
+				font-style: italic;
+				color: $primary;
+				transform: scaleX(0.9);
+				transform-origin: left;
+				letter-spacing: 0;
+			}
+			p{
+				text-align:left;
+				margin: 4px 8px 4px 8px;
+				font-size: 13px;
+				letter-spacing: 0;
+			}
+		}
+		#SLIDE_RORUNIVERSE_ROADOFRICH{
+			position:absolute;
+			top:9%;
+			right:33%;
+			color:$primary;
+			font-style:italic;
+			font-size:11px;
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
+		#SLIDE_RORUNIVERSE_RORGAMES{
+			position:absolute;
+			top:79%;
+			right:58%;
+			color:$primary;
+			font-style:italic;
+			font-size:11px;
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
+		#SLIDE_RORUNIVERSE_COSMIC{
+			position:absolute;
+			top:79%;
+			right:8%;
+			color:$primary;
+			font-style:italic;
+			font-size:11px;
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
 	}
-	.carouselItem .more{
-		position: absolute;
-		top:70%;
-		left:8%;
-		padding:0.4rem 1rem;
-		color:#fff;
-		border:1px solid #fff;
-		display: inline-block;
+	.carouselItemRorGame {
+		.textPanel{
+			position:absolute;
+			top:5px;
+			left:5px;
+			span{
+				color:$primary;
+				text-align:left;
+				display: block;
+				font-size:12px;
+			}
+			h3{
+				color:$primary;
+				text-align:left;
+				font-family: arial;
+				transform: scaleX(0.9);
+				transform-origin: left;
+				letter-spacing: 0;
+			}
+			p{
+				font-size:12px;
+				text-align: left;
+				margin: 0 0 5px 0;
+				text-shadow: 1px 1px 1px #000;
+			}
+		}
+	}
+	.carouselItemCosmic{
+		span{
+			position:absolute;
+			top:5%;
+			left:50%;
+			transform:translateX(-50%);
+			font-size:11px;
+		}
+		.textPanel{
+			position:absolute;
+			top:34%;
+			left:50%;
+			transform:translateX(-50%);
+			width:90%;
+			p{
+				margin:0;
+				opacity: 0.6;
+				font-size:12px;
+			}
+			p:before{
+				content: open-quote;
+			}
+			p:after{
+				content: close-quote;
+			}
+		}
+	}
+	.carouselItemIv{
+		.textPanel{
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translateX(-50%);
+			width:90%;
+			h3{
+				font-family: arial;
+				color:$primary;
+				font-size:11px;
+			}
+			p{
+				margin:0;
+				font-size:11px;
+				text-align:left;
+			}
+		}
 	}
 
 	.carouselNavWrap{
 		width:100%;
-		background:black;
 		.carouselNav {
 			margin:0 auto;
 			.carouselNavItem{
@@ -42,25 +156,122 @@
 		}
 	}
 	@media(min-width: 576px) {
-		.carouselItem .more{
-			top:209px;
-			left:43px;
-			padding:0.4rem 1rem;
+		.carouselItemRorUniverse {
+			.textPanel{
+				top:24%;
+				left:0px;
+				h3{
+					margin:15px 15px 25px 15px;
+				}
+				p{
+					margin: 10px 15px;
+					font-size: 15px;
+					letter-spacing:inherit;
+				}
+			}
+			#SLIDE_RORUNIVERSE_ROADOFRICH{
+				top:11%;
+			}
+			#SLIDE_RORUNIVERSE_RORGAMES{
+				top:81%;
+			}
+			#SLIDE_RORUNIVERSE_COSMIC{
+				top:81%;
+			}
+		}
+		.carouselItemRorGame {
+			.textPanel{
+				top:15px;
+				left:3%;
+				width:90%;
+				p{
+					width:55%;
+					text-shadow: none;
+				}
+			}
+		}
+		.carouselItemCosmic{
+			span{
+				top:8%;
+				font-size:12px;
+			}
+		}
+		.carouselItemIv{
+			.textPanel{
+				width:85%;
+				top:50%;
+				h3{
+					font-size:11px;
+					margin-bottom:20px;
+				}
+				p{
+					margin:0 0 10px 0;
+					font-size:11px;
+				}
+			}
 		}
 	}
 	@media(min-width: 768px) {
-		.carouselItem .more{
-			top:285px;
-			left:58px;
-			padding:0.7rem 2rem;
+		.carouselItemRorUniverse {
+			.textPanel{
+				h3{
+					font-size:2.25rem;
+					margin:30px;
+				}
+				p{
+					margin: 10px 30px;
+				}
+			}
+			#SLIDE_RORUNIVERSE_ROADOFRICH{
+				top:13%;
+			}
+			#SLIDE_RORUNIVERSE_RORGAMES{
+				top:84%;
+				right:51.5%;
+			}
+			#SLIDE_RORUNIVERSE_COSMIC{
+				top:84%;
+				right:1%;
+			}
+		}
+		.carouselItemRorGame {
+			.textPanel{
+				top:75px;
+				left:5%;
+				width:90%;
+				p{
+					width:50%;
+					text-shadow: none;
+				}
+			}
+		}
+		.carouselItemCosmic{
+			span{
+				top:9%;
+				font-size:13px;
+			}
+			.textPanel{
+				top:35%;
+				p{
+					font-size:18px;
+				}
+			}
+		}
+		.carouselItemIv{
+			.textPanel{
+				top:48%;
+				width:85%;
+				h3{
+					font-size:13px;
+					margin-bottom:30px;
+				}
+				p{
+					font-size:15px;
+				}
+			}
 		}
 	}
 	@media(min-width: 992px) {
-		.carouselItem .more{
-			top:382px;
-			left:77px;
-			padding:0.7rem 2rem;
-		}
 		.carouselNavWrap{
 			.carouselNav {
 				.carouselNavItem a{
@@ -69,12 +280,119 @@
 				}
 			}
 		}
+		.carouselItemRorUniverse {
+			.textPanel{
+				top:36%;
+				h3{
+					font-size:2.7rem;
+					margin:20px 50px;
+				}
+				p{
+					margin: 10px 50px;
+				}
+			}
+			#SLIDE_RORUNIVERSE_ROADOFRICH{
+				top:13.5%;
+				right:34%;
+			}
+			#SLIDE_RORUNIVERSE_RORGAMES{
+				top:84.5%;
+				right:53%;
+			}
+			#SLIDE_RORUNIVERSE_COSMIC{
+				top:84.5%;
+				right:3%;
+			}
+		}
+		.carouselItemRorGame {
+			.textPanel{
+				top:120px;
+				left:5%;
+				width:90%;
+				span{
+					font-size:14px;
+				}
+				h3{
+					font-size:2.5rem;
+				}
+				p{
+					font-size:14px;
+					width:50%;
+				}
+			}
+		}
+		.carouselItemCosmic{
+			span{
+				top:10%;
+				font-size:16px;
+			}
+			.textPanel{
+				top:36%;
+				p{
+					font-size:20px;
+				}
+			}
+		}
+		.carouselItemIv{
+			.textPanel{
+				width:67%;
+			}
+		}
 	}
 	@media(min-width: 1200px) {
-		.carouselItem .more{
-			top:450px;
-			left:90px;
-			padding:0.7rem 2rem;
+		.carouselItemRorUniverse {
+			.textPanel{
+				h3{
+					margin:20px 55px;
+				}
+				p{
+					margin: 10px 55px;
+				}
+			}
+			#SLIDE_RORUNIVERSE_ROADOFRICH{
+				right:35%;
+			}
+			#SLIDE_RORUNIVERSE_RORGAMES{
+				right:53.5%;
+			}
+		}
+		.carouselItemRorGame {
+			.textPanel{
+				top:140px;
+				left:5%;
+				width:90%;
+				span{
+					font-size:15px;
+				}
+				h3{
+					font-size:2.7rem;
+					margin-bottom:15px;
+				}
+				p{
+					font-size:15px;
+					width:50%;
+				}
+			}
+		}
+		.carouselItemCosmic{
+			.textPanel{
+				p{
+					font-size:24px;
+				}
+			}
+		}
+		.carouselItemIv{
+			.textPanel{
+				width:58%;
+				h3{
+					font-size:15px;
+					margin-bottom:35px;
+				}
+				p{
+					font-size:16px;
+					margin-bottom:15px;
+				}
+			}
 		}
 	}
 }

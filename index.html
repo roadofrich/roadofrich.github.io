@@ -50,19 +50,19 @@
             <a class="nav-link js-scroll-trigger" href="#rorUniverse">ROR Universe</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#tokenEconomy">Token Economy</a>
+            <a class="nav-link js-scroll-trigger" href="#tokenEconomy" id="MENU_TOKEN_ECONOMY">Token Economy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#whitepaper">White Paper</a>
+            <a class="nav-link js-scroll-trigger" href="#whitepaper" id="MENU_WHITEPAPER">White Paper</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#roadmap">Roadmap</a>
+            <a class="nav-link js-scroll-trigger" href="#roadmap" id="MENU_ROADMAP">Roadmap</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="#team" id="MENU_TEAM">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#partner">Partner</a>
+            <a class="nav-link js-scroll-trigger" href="#partner" id="MENU_PARTNER">Partner</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -79,7 +79,7 @@
     <div class="overlayContent">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <a href="#rorUniverse" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <a href="#rorUniverse" class="btn btn-primary js-scroll-trigger" id="GET_STARTED"></a>
         </div>
       </div>
     </div>
@@ -90,19 +90,50 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">What is ROR Universe?</h2>
-          <p class="text-white-50">ROR Universe는 ROR 토큰을 활용한 토큰 이코노미 게임 생태계를 구축하였습니다.<br>
-          ROR Universe에서는 게임 플레이어와 ROR 토큰 홀더 모두 블록체인 토큰 이코노미 시스템을 통해 누구나 게임 수익을 보상받을 수 있습니다.<br>
-          모든 수익과 보상은 블록체인에 기록되며 공정하게 분배됩니다.</p>
+          <h2 class="text-white mb-4" id="RORUNIVERSE_TITLE"></h2>
+          <p class="text-white-50 mb-0" id="RORUNIVERSE_LINE1"></p>
+          <p class="text-white-50 mb-0" id="RORUNIVERSE_LINE2"></p>
+          <p class="text-white-50" id="RORUNIVERSE_LINE3"></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row carouselContainer">
         <div class="owl-carousel ror-carousel">
-          <div class="carouselItem"><img src="/img/slides/roruniverse.png"><h3></h3></div>
+          <div class="carouselItem carouselItemRorUniverse">
+            <img src="/img/slides/roruniverse.png">
+            <div class="textPanel">
+              <h3 id="SLIDE_RORUNIVERSE_TITLE"></h3>
+              <p id="SLIDE_RORUNIVERSE_DESC1"></p>
+              <p id="SLIDE_RORUNIVERSE_DESC2"></p>
+            </div>
+            <div id="SLIDE_RORUNIVERSE_ROADOFRICH"></div>
+            <div id="SLIDE_RORUNIVERSE_RORGAMES"></div>
+            <div id="SLIDE_RORUNIVERSE_COSMIC"></div>
+          </div>
           <div class="carouselItem"><img src="/img/slides/ror.png"><h3></h3></div>
-          <div class="carouselItem"><img src="/img/slides/rorgame.png"><h3></h3></div>
-          <div class="carouselItem"><img src="/img/slides/cosmic.png"><h3></h3></div>
-          <div class="carouselItem"><img src="/img/slides/iv.png"><h3></h3></div>
+          <div class="carouselItem carouselItemRorGame">
+            <img src="/img/slides/rorgame.png">
+            <div class="textPanel">
+              <span id="SLIDE_RORGAME_SLOGAN"></span>
+              <h3>RORGAME</h3>
+              <p id="SLIDE_RORGAME_LINE1"></p>
+              <p id="SLIDE_RORGAME_LINE2"></p>
+            </div>
+          </div>
+          <div class="carouselItem carouselItemCosmic">
+            <img src="/img/slides/cosmic.png">
+            <span id="SLIDE_COSMIC_SLOGAN"></span>
+            <div class="textPanel">
+              <p id="SLIDE_COSMIC_LINE1"></p>
+            </div>
+          </div>
+          <div class="carouselItem carouselItemIv">
+            <img src="/img/slides/iv.png">
+            <div class="textPanel">
+              <h3 id="SLIDE_IV_TITLE"></h3>
+              <p id="SLIDE_IV_LINE1"></p>
+              <p id="SLIDE_IV_LINE2"></p>
+            </div>
+          </div>
         </div>
         <div class="carouselNavWrap">
           <div class="carouselNav">
@@ -133,11 +164,11 @@
       <div class="row">
         <div class="col-xs-12 col-lg-10 mx-auto">
           <h2 class="text-white mb-4">Token Economy</h2>
-          <p class="text-white-50">ROR Universe의 토큰이코노미는 세계 최초 유료결제수익 100% 보상 시스템을 구축하였습니다.<br>
-플레이어에게 게임 플레이에 대한 직접적인 동기부여를 제공합니다.</p>
+          <p class="text-white-50 mb-0" id="ECONOMY_LINE1">ROR Universe의 토큰이코노미는 세계 최초 유료결제수익 100% 보상 시스템을 구축하였습니다.</p>
+          <p class="text-white-50" id="ECONOMY_LINE2">플레이어에게 게임 플레이에 대한 직접적인 동기부여를 제공합니다.</p>
           <img src="img/tokenFlow.png" class="img-fluid mb-4" alt="Token Economy">
-          <p class="text-white-50 mb-5 mt-5">ROR 토큰은 프라이빗 세일을 제외하고 별도의 ICO/ IEO를 진행하지 않습니다.<br>
-          ICO/IEO를 위해 과도한 마케팅 비용과 수수료를 사용하지 않고 ROR Universe 발전을 위해 사용합니다.</p>
+          <p class="text-white-50 mt-5 mb-0" id="DISTRIBUTION_LINE1">ROR 토큰은 프라이빗 세일을 제외하고 별도의 ICO/ IEO를 진행하지 않습니다.</p>
+          <p class="text-white-50 mb-5" id="DISTRIBUTION_LINE2">ICO/IEO를 위해 과도한 마케팅 비용과 수수료를 사용하지 않고 ROR Universe 발전을 위해 사용합니다.</p>
           <img src="img/tokenPie.png" class="img-fluid" alt="Token Distribution">
         </div>
       </div>      
@@ -151,12 +182,12 @@
         <div class="wrapper">
           <h2>ROR Universe</h2>
           <div class="line1">
-            <div class="column">White Paper KOR</div>
+            <div class="column" id="WHITEPAPER_KOR"></div>
             <div class="column version">Ver 0.2.2</div>
             <div class="column"><a href="./ROR_Universe_White_Paper_Ver_0.2.2.pdf" class="btn" target="_blank">KOR<i class="fas fa-link"></i></a></div>
           </div>
           <div class="line2">
-            <div class="column">White Paper ENG</div>
+            <div class="column" id="WHITEPAPER_ENG"></div>
             <div class="column version">Ver 0.1</div>
             <div class="column"><a href="javascript:void(0)" class="btn" target="_blank">ENG<i class="fas fa-link"></i></a></div>
           </div>
@@ -174,39 +205,39 @@
           <div class="roadmapWrapper">
             <div class="milestone m2019q1">
               <h3 class="right red leftRound">2019 Q1</h3>
-              <p>ROR Universe 프로젝트 시작 / 게임 기획</p>
+              <p id="ROADMAP_2019Q1_LINE1"></p>
             </div>
             <div class="milestone m2019q2">
               <h3 class="left red rightRound">2019 Q2</h3>
-              <p>Road of Rich 개발 시작</p>
+              <p id="ROADMAP_2019Q2_LINE1"></p>
             </div>
             <div class="milestone m2019q3">
               <h3 class="right red leftRound">2019 Q3</h3>
-              <p>블록체인 기반 게임 커뮤니티 IV 플랫폼 론칭</p>
-              <p>Road of Rich 게임 알파 테스트</p>
+              <p id="ROADMAP_2019Q3_LINE1"></p>
+              <p id="ROADMAP_2019Q3_LINE2"></p>
             </div>
             <div class="milestone m2019q4">
               <h3 class="left red rightRound">2019 Q4</h3>
-              <p>Road of Rich 게임 알파 글로벌 서비스 시작</p>
-              <p>ROR GAME(HI5GAME) 리메이크 시작</p>
+              <p id="ROADMAP_2019Q4_LINE1"></p>
+              <p id="ROADMAP_2019Q4_LINE2"></p>
             </div>
 
             <div class="milestone m2020q1">
               <h3 class="right gold leftRound">2020 Q1</h3>
-              <p>ROR GAME(HI5GAME) 모바일 앱 론칭 및 글로벌 서비스 시작</p>
-              <p>Road of Rich 게임 베타 글로벌 서비스</p>
+              <p id="ROADMAP_2020Q1_LINE1"></p>
+              <p id="ROADMAP_2020Q1_LINE2"></p>
             </div>
             <div class="milestone m2020q2">
               <h3 class="left gold rightRound">2020 Q2</h3>
-              <p>ROR Token Mining Pool 론칭</p>
+              <p id="ROADMAP_2020Q2_LINE1"></p>
             </div>
             <div class="milestone m2020q3">
               <h3 class="right gold leftRound">2020 Q3</h3>
-              <p>Cosmic Online 글로벌 알파 테스트</p>
+              <p id="ROADMAP_2020Q3_LINE1"></p>
             </div>
             <div class="milestone m2020q4">
               <h3 class="left gold rightRound">2020 Q4</h3>
-              <p>Road of Rich 모바일 버전 개발</p>
+              <p id="ROADMAP_2020Q4_LINE1"></p>
             </div>
           </div>
         </div>
@@ -220,7 +251,7 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <h2 class="mb-5">Team</h2>
-          <h3 class="mb-5">블록체인과 함께하는 새로운 게임 생태계<br>ROR Universe</h3>
+          <h3 class="mb-5" id="TEAM_LINE1"></h3>
           <h4 class="mb-3">ROR Universe Team</h4>
           <div class="teamWrap">
             <div class="separator"></div>
@@ -462,6 +493,20 @@
   <section id="contact" class="contact-section bg-black">
     <div class="container">
       <div class="row">
+        <div class="col-sm-12">
+          <ul class="segmented-control">
+            <li class="segmented-control__item">
+              <input class="segmented-control__input" type="radio" value="ko" name="lang" id="lang-ko">
+              <label class="segmented-control__label" for="lang-ko">KO</label>
+            </li>
+            <li class="segmented-control__item">
+              <input class="segmented-control__input" type="radio" value="en" name="lang" id="lang-en" >
+              <label class="segmented-control__label" for="lang-en">EN</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-10">
           <div class="contactInnerWrapper">
             <div class="copyright">
@@ -500,7 +545,6 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/grayscale.min.js"></script>
 
 </body>

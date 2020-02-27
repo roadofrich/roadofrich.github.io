@@ -194,30 +194,152 @@
   color: #fff;
 }
 
+.about-section .carouselContainer {
+  background: #000;
+}
+
 .about-section .carouselItem {
   position: relative;
 }
 
-.about-section .carouselItem h3 {
+.about-section .carouselItemRorUniverse .textPanel {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 19%;
+  left: 0px;
 }
 
-.about-section .carouselItem .more {
+.about-section .carouselItemRorUniverse .textPanel h3 {
+  text-align: left;
+  margin-left: 8px;
+  font-family: arial;
+  font-style: italic;
+  color: #d4ad60;
+  transform: scaleX(0.9);
+  transform-origin: left;
+  letter-spacing: 0;
+}
+
+.about-section .carouselItemRorUniverse .textPanel p {
+  text-align: left;
+  margin: 4px 8px 4px 8px;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_ROADOFRICH {
   position: absolute;
-  top: 70%;
-  left: 8%;
-  padding: 0.4rem 1rem;
-  color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
+  top: 9%;
+  right: 33%;
+  color: #d4ad60;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_RORGAMES {
+  position: absolute;
+  top: 79%;
+  right: 58%;
+  color: #d4ad60;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_COSMIC {
+  position: absolute;
+  top: 79%;
+  right: 8%;
+  color: #d4ad60;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.about-section .carouselItemRorGame .textPanel {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.about-section .carouselItemRorGame .textPanel span {
+  color: #d4ad60;
+  text-align: left;
+  display: block;
+  font-size: 12px;
+}
+
+.about-section .carouselItemRorGame .textPanel h3 {
+  color: #d4ad60;
+  text-align: left;
+  font-family: arial;
+  transform: scaleX(0.9);
+  transform-origin: left;
+  letter-spacing: 0;
+}
+
+.about-section .carouselItemRorGame .textPanel p {
+  font-size: 12px;
+  text-align: left;
+  margin: 0 0 5px 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.about-section .carouselItemCosmic span {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+}
+
+.about-section .carouselItemCosmic .textPanel {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.about-section .carouselItemCosmic .textPanel p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.about-section .carouselItemCosmic .textPanel p:before {
+  content: open-quote;
+}
+
+.about-section .carouselItemCosmic .textPanel p:after {
+  content: close-quote;
+}
+
+.about-section .carouselItemIv .textPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.about-section .carouselItemIv .textPanel h3 {
+  font-family: arial;
+  color: #d4ad60;
+  font-size: 11px;
+}
+
+.about-section .carouselItemIv .textPanel p {
+  margin: 0;
+  font-size: 11px;
+  text-align: left;
 }
 
 .about-section .carouselNavWrap {
   width: 100%;
-  background: black;
 }
 
 .about-section .carouselNavWrap .carouselNav {
@@ -240,38 +362,204 @@
 }
 
 @media (min-width: 576px) {
-  .about-section .carouselItem .more {
-    top: 209px;
-    left: 43px;
-    padding: 0.4rem 1rem;
+  .about-section .carouselItemRorUniverse .textPanel {
+    top: 24%;
+    left: 0px;
+  }
+  .about-section .carouselItemRorUniverse .textPanel h3 {
+    margin: 15px 15px 25px 15px;
+  }
+  .about-section .carouselItemRorUniverse .textPanel p {
+    margin: 10px 15px;
+    font-size: 15px;
+    letter-spacing: inherit;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_ROADOFRICH {
+    top: 11%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_RORGAMES {
+    top: 81%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_COSMIC {
+    top: 81%;
+  }
+  .about-section .carouselItemRorGame .textPanel {
+    top: 15px;
+    left: 3%;
+    width: 90%;
+  }
+  .about-section .carouselItemRorGame .textPanel p {
+    width: 55%;
+    text-shadow: none;
+  }
+  .about-section .carouselItemCosmic span {
+    top: 8%;
+    font-size: 12px;
+  }
+  .about-section .carouselItemIv .textPanel {
+    width: 85%;
+    top: 50%;
+  }
+  .about-section .carouselItemIv .textPanel h3 {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  .about-section .carouselItemIv .textPanel p {
+    margin: 0 0 10px 0;
+    font-size: 11px;
   }
 }
 
 @media (min-width: 768px) {
-  .about-section .carouselItem .more {
-    top: 285px;
-    left: 58px;
-    padding: 0.7rem 2rem;
+  .about-section .carouselItemRorUniverse .textPanel h3 {
+    font-size: 2.25rem;
+    margin: 30px;
+  }
+  .about-section .carouselItemRorUniverse .textPanel p {
+    margin: 10px 30px;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_ROADOFRICH {
+    top: 13%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_RORGAMES {
+    top: 84%;
+    right: 51.5%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_COSMIC {
+    top: 84%;
+    right: 1%;
+  }
+  .about-section .carouselItemRorGame .textPanel {
+    top: 75px;
+    left: 5%;
+    width: 90%;
+  }
+  .about-section .carouselItemRorGame .textPanel p {
+    width: 50%;
+    text-shadow: none;
+  }
+  .about-section .carouselItemCosmic span {
+    top: 9%;
+    font-size: 13px;
+  }
+  .about-section .carouselItemCosmic .textPanel {
+    top: 35%;
+  }
+  .about-section .carouselItemCosmic .textPanel p {
+    font-size: 18px;
+  }
+  .about-section .carouselItemIv .textPanel {
+    top: 48%;
+    width: 85%;
+  }
+  .about-section .carouselItemIv .textPanel h3 {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .about-section .carouselItemIv .textPanel p {
+    font-size: 15px;
   }
 }
 
 @media (min-width: 992px) {
-  .about-section .carouselItem .more {
-    top: 382px;
-    left: 77px;
-    padding: 0.7rem 2rem;
-  }
   .about-section .carouselNavWrap .carouselNav .carouselNavItem a {
     font-size: 1rem;
     padding: 1rem;
   }
+  .about-section .carouselItemRorUniverse .textPanel {
+    top: 36%;
+  }
+  .about-section .carouselItemRorUniverse .textPanel h3 {
+    font-size: 2.7rem;
+    margin: 20px 50px;
+  }
+  .about-section .carouselItemRorUniverse .textPanel p {
+    margin: 10px 50px;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_ROADOFRICH {
+    top: 13.5%;
+    right: 34%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_RORGAMES {
+    top: 84.5%;
+    right: 53%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_COSMIC {
+    top: 84.5%;
+    right: 3%;
+  }
+  .about-section .carouselItemRorGame .textPanel {
+    top: 120px;
+    left: 5%;
+    width: 90%;
+  }
+  .about-section .carouselItemRorGame .textPanel span {
+    font-size: 14px;
+  }
+  .about-section .carouselItemRorGame .textPanel h3 {
+    font-size: 2.5rem;
+  }
+  .about-section .carouselItemRorGame .textPanel p {
+    font-size: 14px;
+    width: 50%;
+  }
+  .about-section .carouselItemCosmic span {
+    top: 10%;
+    font-size: 16px;
+  }
+  .about-section .carouselItemCosmic .textPanel {
+    top: 36%;
+  }
+  .about-section .carouselItemCosmic .textPanel p {
+    font-size: 20px;
+  }
+  .about-section .carouselItemIv .textPanel {
+    width: 67%;
+  }
 }
 
 @media (min-width: 1200px) {
-  .about-section .carouselItem .more {
-    top: 450px;
-    left: 90px;
-    padding: 0.7rem 2rem;
+  .about-section .carouselItemRorUniverse .textPanel h3 {
+    margin: 20px 55px;
+  }
+  .about-section .carouselItemRorUniverse .textPanel p {
+    margin: 10px 55px;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_ROADOFRICH {
+    right: 35%;
+  }
+  .about-section .carouselItemRorUniverse #SLIDE_RORUNIVERSE_RORGAMES {
+    right: 53.5%;
+  }
+  .about-section .carouselItemRorGame .textPanel {
+    top: 140px;
+    left: 5%;
+    width: 90%;
+  }
+  .about-section .carouselItemRorGame .textPanel span {
+    font-size: 15px;
+  }
+  .about-section .carouselItemRorGame .textPanel h3 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+  }
+  .about-section .carouselItemRorGame .textPanel p {
+    font-size: 15px;
+    width: 50%;
+  }
+  .about-section .carouselItemCosmic .textPanel p {
+    font-size: 24px;
+  }
+  .about-section .carouselItemIv .textPanel {
+    width: 58%;
+  }
+  .about-section .carouselItemIv .textPanel h3 {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+  .about-section .carouselItemIv .textPanel p {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 
@@ -459,6 +747,57 @@
   .contact-section .footerLogo {
     margin: 0;
   }
+}
+
+.contact-section .segmented-control {
+  display: table;
+  width: 100px;
+  padding: 0;
+}
+
+.contact-section .segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-section .segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.contact-section .segmented-control__label {
+  display: block;
+  margin: 0 -1px -1px 0;
+  /* -1px margin removes double-thickness borders between items */
+  padding: .5em;
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.contact-section .segmented-control__input:checked + .segmented-control__label {
+  background: #f8f9fa;
+  color: #333;
+  opacity: 1;
+}
+
+.contact-section .segmented-control__item:first-child .segmented-control__label {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 7px;
+}
+
+.contact-section .segmented-control__item:last-child .segmented-control__label {
+  border-top-left-radius: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 0;
 }
 
 .partner-section {
